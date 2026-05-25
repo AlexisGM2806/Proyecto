@@ -8,3 +8,9 @@ En cuanto a los tests, no cubren todas las clases por igual, esto se resume a qu
 Por último, se separó la fachada del controlador, ya que la fachada no tenía que tener la lógica ni los listados del sistema, eso le corresponde al controlador. La fachada quedó como punto de entrada limpio, sin responsabilidades que no le pertenecen.
 En cuanto a el material utilizado, todas nuestras dudas fueron despejadas leyendo la documentación disponible en la webasignatura, allí estaba toda la solución a nuestros problemas.
 Podemos decir que el proyecto va bien, quedan dos entregas y esto recien empieza pero la base está y nos sentimos contentos con ello. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ACLARACIONES - Términos utilizados en el diagrama de clases UML
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+AGREGA (AGREGACIÓN) - Controlador agrega Usuario, IItem e Interaccion en listas los administra, pero un Usuario puede existir sin el Controlador.
+USA - Fachada usa Controlador. Llama sus métodos estáticos, pero no guarda ninguna referencia a él.
+REFERENCIA - Interaccion tiene atributos Usuario e IItem: los conoce y los guarda, pero no los creo ni los controla.
